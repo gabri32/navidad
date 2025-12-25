@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Libro de Navidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="snow-container">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+    </div>
+
+    <div class="book-container">
+        <div class="book" id="book">
+            <!-- Página 1 - Bienvenida -->
+            <div class="page page-1" data-page="1">
+                <div class="page-content">
+                    <div class="christmas-ornament">🎄</div>
+                    <h1 class="page-title">Nuestra Primera Navidad</h1>
+                    <div class="page-text">
+                        <p>En esta Navidad quiero regalarte algo diferente:
+                            no viene envuelto en papel, sino en palabras que nacen del corazón.
+                            Cada página guarda un pedacito de lo que siento por ti,
+                            porque desde que llegaste, mi vida se llenó de luz, calma
+                            y razones para sonreír.</p>
+                    </div>
+                    <div class="page-decoration">✨</div>
+                </div>
+            </div>
+
+            <!-- Página 2 - Agradecimiento -->
+            <div class="page page-2" data-page="2">
+                <div class="page-content">
+                    <div class="christmas-ornament">💝</div>
+                    <h1 class="page-title">Gracias por Estar</h1>
+                    <div class="page-text">
+                        <p>Quiero agradecerte por cada momento que has estado a mi lado. En los días de sol y en las
+                            noches más oscuras, siempre has sido mi refugio.</p>
+                        <p>Tu apoyo incondicional, tu compañía silenciosa cuando más la necesitaba, y tu amor constante
+                            han sido el regalo más hermoso que la vida me ha dado.</p>
+                        <p>Gracias por construir conmigo este amor tan real y verdadero.</p>
+                    </div>
+                    <div class="page-decoration">💕</div>
+                </div>
+            </div>
+
+            <!-- Página 3 - Nuestro camino -->
+            <div class="page page-3" data-page="3">
+                <div class="page-content">
+                    <div class="christmas-ornament">🌟</div>
+                    <h1 class="page-title">Nuestro Camino Juntos</h1>
+                    <div class="page-text">
+                        <p>Hemos vivido momentos de alegría pura, risas que llenan el alma y abrazos que curan cualquier
+                            herida.
+                      También hemos enfrentado momentos incómodos, conversaciones difíciles y sentimientos
+                            complejos.</p>
+                        <p>Pero cada experiencia, cada emoción compartida, nos ha hecho crecer y nos ha enseñado a
+                            amarnos más profundamente.</p>
+                    </div>
+                    <div class="page-decoration">🎁</div>
+                </div>
+            </div>
+
+            <!-- Página 4 - Mensaje final -->
+            <div class="page page-4" data-page="4">
+                <div class="page-content final-page">
+                    <div class="christmas-ornament special">❤️</div>
+                    <h1 class="page-title final-title">Con Todo Mi Amor</h1>
+                    <div class="page-text final-text">
+                        <p >Sé que es nuestra primera Navidad juntos y que han pasado muchas
+                            situaciones: algunas incómodas, otras alegres y muchas llenas de sentimientos diferentes.
+                       
+                        Pero nunca olvides que <strong>te amo y te respeto profundamente</strong>.
+                
+                       Quiero estar contigo el resto de mi vida y estaría dispuesto a cambiar mil
+                            cosas o hacer muchas más para seguir a tu lado.
+                    Sé que no soy perfecto, pero <strong>te amo con todo mi
+                                corazón</strong>.</p>
+                    </div>
+                    <div class="page-decoration final-decoration">💖✨💖</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn prev-btn" id="prevBtn">❮</button>
+            <span class="page-indicator" id="pageIndicator">1 / 4</span>
+            <button class="nav-btn next-btn" id="nextBtn">❯</button>
+        </div>
+    </div>
+
+    <div class="music-control">
+        <button id="musicBtn" class="music-btn">🎵</button>
+        <audio id="backgroundMusic" loop>
+            <source src="christmas-music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
